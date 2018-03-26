@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <link rel="stylesheet" href="w3style.css">
+    <meta charset="UTF-8" />
+    <title>flowblade-doc</title>
+    
+  </head>
+  <body>
+        <script src='script.js' type='text/javascript'></script>
+        <div class="w3-bar w3-indigo navbar1">
+                <a href="doc.html" class="w3-bar-item w3-button w3-hover-indigo" style="margin: 0px; padding: 0px;">
+                    <img  width="250" height="25" src="graph/navbar.png"></a>
+                <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-text-black w3-hover-indigo">DOWNLOAD</a>
+                <a href="doc.html" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-text-black w3-hover-indigo">DOCS</a>
+                <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-text-black w3-hover-indigo">FEATURES</a>
+                <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-text-black w3-hover-indigo" >ABOUT</a>
+                <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-indigo dropbtn" onclick="myFunction()">&#9776;</a>
+        </div>
+
+        <div id="myDropdown" class="dropdown-content w3-bar-block w3-blue w3-hide w3-hide-large w3-mobile w3-center">
+                <a href="#" class="w3-bar-item w3-button w3-hover-text-black w3-hover-blue" style="border-top-style: none; border-bottom-style: solid; border-right-style: none; border-left-style: none; border-color: black; border-width: 1px;"><b>DOWNLOAD</b></a>
+                <a href="doc.html" class="w3-bar-item w3-button w3-hover-text-black w3-hover-blue" style="border-top-style: none; border-bottom-style: solid; border-right-style: none; border-left-style: none; border-color: black; border-width: 1px;"><b>DOCS</b></a>
+                <a href="#" class="w3-bar-item w3-button w3-hover-text-black w3-hover-blue" style="border-top-style: none; border-bottom-style: solid; border-right-style: none; border-left-style: none; border-color: black; border-width: 1px;"><b>FEATURES</b></a>
+                <a href="#" class="w3-bar-item w3-button w3-hover-text-black w3-hover-blue"><b>ABOUT</b></a>
+        </div>
+        
+        
+       <div class="w3-container w3-card" style=" height:100%; background-color: #dddddd;">
+        
+        <a href="doc.html"><img  src="graph/head.png" style="display: block;
+            margin-left: auto;
+            margin-right: auto; max-width: 930px; max-height: 85px; width: 100%; height: 100%"> </a>
+        
+        
+        
+        <div class=w3-container> 
+          <div class="w3-quarter"  >
+              <p>
+
+              </p>
+          </div>
+
+          <div class="w3-half">
+            
+            
+            
+            <div><h1>CREATING COMPOSITED IMAGES</h1></div>
+            
+            <p>
+            This section describes the minimal workflow for making a movie using only a single track.
+            </p>
+            <div class =" w3-card w3-round" id="toc">
+                    <div class="w3-card w3-mobile  w3-center w3-hover-opacity"><div class="w3-container"><a style="text-decoration: none;" href="#Filter_Workflow">
+                            <h4 style="display: inline-block"><b>Filter Workflow</b></h4></a>
+                         <a href="javascript:void(0)" class="w3-bar-item w3-button dropbtn2 w3-hover-black" onclick="myFunction2()">&#9661;</a></div></div>
+                         <div  id="myDropdown2" class="dropdown-content2 w3-bar-block w3-hide w3-mobile w3-center" style="background-color: #c9c9c9;">
+                        <div class="w3-card w3-mobile  w3-center w3-hover-opacity"><div class="w3-container"><a style="text-decoration: none;" href="#__Adding_Filter">Adding Filter</a></div></div>
+                        <div class="w3-card w3-mobile  w3-center w3-hover-opacity"><div class="w3-container"><a style="text-decoration: none;" href="#_Opening_Filter_for_Editing_in_Filters_tab"> Opening Filter for Editing in Filters tab</a></div></div>
+                        <div class="w3-card w3-mobile  w3-center w3-hover-opacity"><div class="w3-container"><a style="text-decoration: none;" href="#_Editing_Filters"> Editing Filters</a></div></div>
+                        <div class="w3-card w3-mobile  w3-center w3-hover-opacity"><div class="w3-container"><a style="text-decoration: none;" href="#_Cloning_Filters_from_other_Clips"> Cloning Filters from other Clips</a></div></div>
+                        <div class="w3-card w3-mobile  w3-center w3-hover-opacity"><div class="w3-container"><a style="text-decoration: none;" href="#_Deleting_Filters_from_Clips"> Deleting Filters from Clips</a></div></div>
+                        </div>
+               
+            </div>
+
+            <div class="w3-rest"> <p></p></div>
+              
+            <div><h1>Filtering image and audio</h1>
+                            
+                            <p>
+                            In Flowblade Movie Editor you can add a Filters to all clips to modify output image and audio.
+                            </p>
+                            
+                        
+                            
+                            <h3><a name="Filter_Workflow">Filter Workflow</a></h3>
+                            
+                            
+                            <h4><a name="__Adding_Filter">  Adding Filter</a></h4>
+                                <ul>
+                            <li> Click <b>Right Mouse</b> on any clip and select for example <b>Add Filter -&gt; Blur -&gt; Pixelize</b> from popup menu.</li>
+                            <li> In <b>Filters</b> tab: double click on a filter in the currently displayed filters group.</li>
+                            <li> In <b>Filters</b> tab: drag a filter from the currently displayed filters group to the Filters Stack table below.</li>
+                                </ul>
+                            
+                            <h4><a name="_Opening_Filter_for_Editing_in_Filters_tab"> Opening Filter for Editing in Filters tab</a></h4>
+                                <ul>
+                            <li> Click <b>Right Mouse</b> on any clip and select <b>Open in Filters Editor</b> from popup menu.</li>
+                            <li> <b>Double click</b> on any clip.</li>
+                                </ul>
+                            
+                            <h4><a name="_Editing_Filters"> Editing Filters</a></h4>
+                                <ul>
+                            <li>Parameters defing output are edited in the Filters tab.</li>
+                            <li> Clips will display small filter icon in the top right corner if a filter has been added to them.</li>
+                            <li> Clips will display grey filter icon in the center of the clip while clip is being edited.</li>
+                            <li>The filters that modify alpha channel only have effect if the clip they are attached to is mixed with other clips using Compositors.</li>
+                                </ul>
+                            
+                            <h4><a name="_Cloning_Filters_from_other_Clips"> Cloning Filters from other Clips</a></h4>
+                                <ul>
+                            <li> Click <b>Right Mouse</b> on any clip and select <b>Clone Filters -&gt; From Next Clip</b> or <b>Clone Filters -&gt; From Previous Clip</b> from popup menu.</li>
+                                </ul>
+                            
+                            <h4><a name="_Deleting_Filters_from_Clips"> Deleting Filters from Clips</a></h4>
+                                <ul>
+                            <li> Select filter in Filters Stack table and click <b>Delete</b> button above.</li>
+                            <li> Select filter in Filters Stack table and press <b>Delete</b> key.</li>
+                            <li> Select clip or range of clips in Timeline and select <b>Clear Filters</b> from application menu.</li>
+                                </ul>
+                            
+                            
+                            
+                            
+                            
+                            
+
+            </div>
+                            
+            
+
+            </div>
+            
+            
+                            
+                            
+                
+                            
+                            
+                             
+                            
+            
+            </div>
+            
+            </div>
+
+            <div class="w3-third w3-grey"></div>
+        </div>
+    </div>
+  </body>
+
+</html>

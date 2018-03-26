@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <link rel="stylesheet" href="w3style.css">
+    <meta charset="UTF-8" />
+    <title>flowblade-doc</title>
+    
+  </head>
+  <body>
+        <script src='script.js' type='text/javascript'></script>
+        <div class="w3-bar w3-indigo navbar1">
+                <a href="doc.html" class="w3-bar-item w3-button w3-hover-indigo" style="margin: 0px; padding: 0px;">
+                    <img  width="250" height="25" src="graph/navbar.png"></a>
+                <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-text-black w3-hover-indigo">DOWNLOAD</a>
+                <a href="doc.html" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-text-black w3-hover-indigo">DOCS</a>
+                <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-text-black w3-hover-indigo">FEATURES</a>
+                <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-text-black w3-hover-indigo" >ABOUT</a>
+                <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-indigo dropbtn" onclick="myFunction()">&#9776;</a>
+        </div>
+
+        <div id="myDropdown" class="dropdown-content w3-bar-block w3-blue w3-hide w3-hide-large w3-mobile w3-center">
+                <a href="#" class="w3-bar-item w3-button w3-hover-text-black w3-hover-blue" style="border-top-style: none; border-bottom-style: solid; border-right-style: none; border-left-style: none; border-color: black; border-width: 1px;"><b>DOWNLOAD</b></a>
+                <a href="doc.html" class="w3-bar-item w3-button w3-hover-text-black w3-hover-blue" style="border-top-style: none; border-bottom-style: solid; border-right-style: none; border-left-style: none; border-color: black; border-width: 1px;"><b>DOCS</b></a>
+                <a href="#" class="w3-bar-item w3-button w3-hover-text-black w3-hover-blue" style="border-top-style: none; border-bottom-style: solid; border-right-style: none; border-left-style: none; border-color: black; border-width: 1px;"><b>FEATURES</b></a>
+                <a href="#" class="w3-bar-item w3-button w3-hover-text-black w3-hover-blue"><b>ABOUT</b></a>
+        </div>
+        
+        
+       <div class="w3-container w3-card" style=" height:100%; background-color: #dddddd;">
+        
+        <a href="doc.html"><img  src="graph/head.png" style="display: block;
+            margin-left: auto;
+            margin-right: auto; max-width: 930px; max-height: 85px; width: 100%; height: 100%"> </a>
+        
+        
+        
+        <div class=w3-container> 
+          <div class="w3-quarter"  >
+              <p>
+
+              </p>
+          </div>
+
+          <div class="w3-half">
+            
+            
+            
+            <div><h1>CREATING COMPOSITED IMAGES</h1></div>
+            
+            <p>
+            This section describes the minimal workflow for making a movie using only a single track.
+            </p>
+
+            
+            <div class =" w3-card w3-round" id="toc">
+                    
+                    <div class="w3-card w3-mobile  w3-center w3-hover-opacity"><div class="w3-container"><a style="text-decoration: none;" href="#Rationale"><h4 style="display: inline-block"><b>Rationale</b></h4></a></div></div>
+                    <div class="w3-card w3-mobile  w3-center w3-hover-opacity"><div class="w3-container"><a style="text-decoration: none;" href="#Generic_Proxy_Editing_workflow"><h4 style="display: inline-block"><b>Generic Proxy Editing workflow</b></h4></a></div></div>
+                    <div class="w3-card w3-mobile  w3-center w3-hover-opacity"><div class="w3-container"><a style="text-decoration: none;" href="#Flowblade_proxy_editing"><h4 style="display: inline-block"><b>Flowblade proxy editing</b></h4></a></div></div>
+                    <div class="w3-card w3-mobile  w3-center w3-hover-opacity"><div class="w3-container"><a style="text-decoration: none;" href="#Important_notes_about_Flowblade_proxy_editing"><h4 style="display: inline-block"><b>Important notes about Flowblade proxy editing</b></h4></a></div></div>
+                    </div>
+
+                    <div><h1>Proxy Editing</h1>
+                        
+                                    <p>
+                                    Proxy editing is a method of editing in which original media clips are presented on timeline by proxy clips.
+
+                                    </p> 
+                            
+
+                                    <h3><a name="Rationale">Rationale</a></h3>
+                                    <p>
+                                    Proxy clips used in proxy editing usually have smaller data rate and less CPU intensive decoding. There are two main reasons to use proxy editing:
+                                    </p>
+                                    <ul>
+                                    <li> Original media from which the program is edited makes too high demands for either disk bandwidth or CPU processing power for decoding to enable responsive editing </li>
+                                    <li> Original is kept on network server, slow external disk or other media with restricted access and does not enable provide responsive editing if accessed directly.</li>
+                                    </ul>
+
+
+
+                                    <h3><a name="Generic_Proxy_Editing_workflow">Generic Proxy Editing workflow</a></h3>
+
+                                    <p>
+                                    All proxy editing workflows have the same phases:
+                                    </p>
+                                    <ol>
+                                    <li> Render proxy media from original media </li>
+                                    <li> Replace original media with proxy media </li>
+                                    <li> Edit using proxy media </li>
+                                    <li> Replace proxy media with original media </li>
+                                    <li> Render final program using original media </li>
+                                    </ol>
+
+                                    <h3><a name="Flowblade_proxy_editing">Flowblade proxy editing</a></h3>
+                                    <ol>
+                                    <li> Creating Proxy Media</li>
+                                    <ol>
+                                    <li> Select <b>Project-&gt;Proxy Manager</b> in menu and set proxy file settings in <b>Proxy Encoding</b> area  </li>
+                                    <li> Select Video Media files in <b>'Media'</b> Panel</li>
+                                    <li> Press button with proxy file icon next Delete button in 'Media' Panel</li>
+                                    <li> If Project is already in <b>'Using Proxy Media'</b> proxy mode, timeline clips with original media that had proxy media rendered to will be replaced with proxy media immediately</li>
+                                    </ol>
+                                    <li>Converting to use Proxy media</li>
+                                    <ol>
+                                    <li> Select <b>Project-&gt;Proxy Manager</b> to open Proxy Manager</li>
+                                    <li> Press <b>Use Proxy Media</b> button</li>
+                                    </ol>
+                                    <li>Editing with proxy media</li>
+                                    <ol>
+                                    <li> Clips that use proxy media have a blue stripe indicating that status</li>
+                                    <li> A proxy editing indicator icon is displayed at left bottom corner</li>
+                                    <li> If new proxy media is rendered timeline clips using the original media in question will be replaced with proxy media immediately</li>
+                                    <li> Project can be saved normally and converted after load to use original media</li>
+                                    </ol>
+                                    <li>Converting to use Original Media</li>
+                                    <ol>
+                                    <li> Select <b>Project-&gt;Proxy Manager</b> to open Proxy Manager</li>
+                                    <li> Press <b>Use Original Media</b> button</li>
+                                    </ol>
+                                    </ol>
+                                    <h3><a name="Important_notes_about_Flowblade_proxy_editing">Important notes about Flowblade proxy editing</a></h3>
+                                    <div class="important">
+                                    <li> <b>DESTROYING ANY MEDIA while doing proxy editing WILL PREVENT CONVERTING BACK TO USING ORIGINAL MEDIA</b> </li>
+                                    <li> <b>It is only possible to use all <i>existing</i> proxy media and clips or all original media</b>. It is not possible to use only some of the created proxy media.</li>
+
+                                    </div>
+                                    <div class="note">
+                                    <p>
+                                    Flowblade uses a programming techique that changes the paths used by media items and clips to point either to hidden proxy media or original media.
+                                    </p>
+                                    <p>
+                                    Changing from one to another is implemented by writing a hidden temporary project file to disk and replacing paths when project is read back. Because of this any missing original media makes conversion back to using original media fail.
+                                    </p>
+                                    </div>
+
+                                    </div>
+               
+            </div>
+
+            <div class="w3-rest"> <p></p></div> 
+              
+            
+                        
+	
+
+                            
+                        
+
+            <div class="w3-third w3-grey"></div>
+        </div>
+    </div>
+  </body>
+
+</html>

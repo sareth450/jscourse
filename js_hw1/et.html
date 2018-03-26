@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <link rel="stylesheet" href="w3style.css">
+    <meta charset="UTF-8" />
+    <title>flowblade-doc</title>
+  </head>
+  <body>
+        <script src='script.js' type='text/javascript'></script>
+        <div class="w3-bar w3-indigo navbar1">
+                <a href="doc.html" class="w3-bar-item w3-button w3-hover-indigo" style="margin: 0px; padding: 0px;">
+                    <img  width="250" height="25" src="graph/navbar.png"></a>
+                <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-text-black w3-hover-indigo">DOWNLOAD</a>
+                <a href="doc.html" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-text-black w3-hover-indigo">DOCS</a>
+                <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-text-black w3-hover-indigo">FEATURES</a>
+                <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-text-black w3-hover-indigo" >ABOUT</a>
+                <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-indigo dropbtn" onclick="myFunction()">&#9776;</a>
+        </div>
+
+        <div id="myDropdown" class="dropdown-content w3-bar-block w3-blue w3-hide w3-hide-large w3-mobile w3-center">
+                <a href="#" class="w3-bar-item w3-button w3-hover-text-black w3-hover-blue" style="border-top-style: none; border-bottom-style: solid; border-right-style: none; border-left-style: none; border-color: black; border-width: 1px;"><b>DOWNLOAD</b></a>
+                <a href="doc.html" class="w3-bar-item w3-button w3-hover-text-black w3-hover-blue" style="border-top-style: none; border-bottom-style: solid; border-right-style: none; border-left-style: none; border-color: black; border-width: 1px;"><b>DOCS</b></a>
+                <a href="#" class="w3-bar-item w3-button w3-hover-text-black w3-hover-blue" style="border-top-style: none; border-bottom-style: solid; border-right-style: none; border-left-style: none; border-color: black; border-width: 1px;"><b>FEATURES</b></a>
+                <a href="#" class="w3-bar-item w3-button w3-hover-text-black w3-hover-blue"><b>ABOUT</b></a>
+        </div>
+        
+        
+       <div class="w3-container w3-card" style=" height:100%; background-color: #dddddd;">
+        
+            <a href="doc.html"><img  src="graph/head.png" style="display: block;
+                margin-left: auto;
+                margin-right: auto; max-width: 930px; max-height: 85px; width: 100%; height: 100%"> </a>
+        
+        
+        
+        <div class=w3-container> 
+          <div class="w3-quarter"  >
+              <p>
+
+              </p>
+          </div>
+
+            <div class="w3-half" > 
+                
+                <div><h1>Edit Tools</h1></div>
+                
+                <p>
+                Flowblade Movie Editor has six edit tools, <b>4 move tools</b> and <b>3 trim tools</b>.
+                </p>
+                <div >
+                <b>Use Keyboard Shortcuts!</b> It is much faster to use keys <b>1-7</b> to change tools. Note that keys 1-7 only change tools if timeline has keyboard focus. 
+                </div>
+                
+                <div id="toccontent">
+                        <div class =" w3-card w3-round" style="background-color: #c9c9c9;" >
+                                <div class="w3-card w3-mobile  w3-center w3-hover-opacity"><div class="w3-container"><a style="text-decoration: none;" href="#Insert_Tool"><h4><b>Insert Tool</b></h4></a></div></div>
+                                <div class="w3-card w3-mobile  w3-center w3-hover-opacity"><div class="w3-container"><a style="text-decoration: none;" href="#Overwrite_Tool"><h4><b>Overwrite Tool</b></h4></a></div></div>
+                               <div class="w3-card w3-mobile  w3-center w3-hover-opacity"><div class="w3-container"><a style="text-decoration: none;" href="#Trim_Tool"><h4><b>Trim Tool</b></h4></a></div></div>
+                               <div class="w3-card w3-mobile  w3-center w3-hover-opacity"><div class="w3-container"><a style="text-decoration: none;" href="#Trim_Tool_Multi_Track_Ripple_Mode"><h4><b>Trim Tool Multi Track Ripple Mode</b></h4></a></div></div>
+                               <div class="w3-card w3-mobile  w3-center w3-hover-opacity"><div class="w3-container"><a style="text-decoration: none;" href="#Roll_Tool"><h4><b>Roll Tool</b></h4></a></div></div>
+                               <div class="w3-card w3-mobile  w3-center w3-hover-opacity"><div class="w3-container"><a style="text-decoration: none;" href="#Slip_Tool"><h4><b>Slip Tool</b></h4></a></div></div>
+                               <div class="w3-card w3-mobile  w3-center w3-hover-opacity"><div class="w3-container"><a style="text-decoration: none;" href="#Spacer_Tool"><h4><b>Spacer Tool</b></h4></a></div></div>
+                               <div class="w3-card w3-mobile  w3-center w3-hover-opacity"><div class="w3-container"><a style="text-decoration: none;" href="##Box_Tool"><h4><b>Box Tool</b></h4></a></div></div>
+                               <div class="w3-card w3-mobile  w3-center w3-hover-opacity"><div class="w3-container"><a style="text-decoration: none;" href="#Movie_Tool_clip_and_trim"><h4><b>Move Tool clip end trim</b></h4></a></div></div>
+                            </div>
+
+                <a id="insert"></a>
+                
+                
+                
+                <h3><a name="Insert_Tool">Insert Tool</a></h3>
+                
+                <p>
+                Splice out one or more clips and insert them at desired cut on any track.
+                </p>
+                
+                <ol>
+                <li>Pick 'Insert' tool</li>
+                    <ul>
+                    <li> Use <b>Tool Switcher</b> button drop menu or press <b>1</b> key.</li>
+                    </ul>
+                <li>Select clip</li>
+                    <ul>
+                    <li> Click <b>Left Mouse</b> on a clip.</li>
+                    </ul>
+                <li>Select other end of clip range if moving multiple clips</li>
+                    <ul>
+                    <li> Click <b>CTRL+Left Mouse</b> on the clip you wish to be the other end of move clip range.</li>
+                    </ul>
+                <li>Drag Clip(s) to new position</li>
+                    <ul>
+                    <li> Press <b>Left Mouse</b> on a selecetd clip and drag clip/s to a new position.</li>
+                    <li> Yellow arrow displays insert point.</li>
+                    <li> You can also move clips to a different track.</li>
+                    </ul>
+                </ol>
+                
+                <a id="overwrite"></a>
+                <h3><a name="Overwrite_Tool">Overwrite Tool</a></h3>
+                
+                <p>
+                Lift out one or more clips and insert them at any point to overwrite on any track.
+                </p>
+                
+                <ol>
+                <li>Pick 'Overwrite' tool</li>
+                    <ul>
+                    <li> Use <b>Tool Switcher</b> button drop menu or press <b>2</b> key.</li>
+                    </ul>
+                <li>Select clip</li>
+                    <ul>
+                    <li><b> Click </b>Left Mouse<b> on a clip.</b></li><b>
+                    </b><li><b></b> Select other end of clip range if moving multiple clips. Click <b>CTRL+Left Mouse</b> on the clip you wish to be the other end of move clip range.</li>
+                    </ul>
+                <li>Drag Clip(s) to new position</li>
+                    <ul>
+                    <li> Press <b>Left Mouse</b> on a selecetd clip and drag clip/s to a new position.</li>
+                    <li> Red shadow clips show overwrite area.</li>
+                    <li> You can also move clips to a different track.</li>
+                    </ul>
+                </ol>
+                
+                <a id="trim"></a>
+                <h3><a name="Trim_Tool">Trim Tool</a></h3>
+                <p>
+                Make clip longer or shorter from either clip's end or from clip's beginning.
+                </p>
+                <ol>
+                <li> Pick 'Trim' tool</li>
+                    <ul>
+                    <li> Use <b>Tool Switcher</b> button drop menu or press <b>3</b> key.</li>
+                    </ul>
+                <li> Select trimmed cut and select new in or out frame</li>
+                    <ul>
+                    <li> Press with <b>Left Mouse</b> on a clip near the side you wish to trim</li>
+                    <li> Continue on to <b>Left drag</b> on clip to select new in or out frame</li>
+                    </ul>
+                <li> View trimmed cut</li>
+                    <ul>
+                    <li> Press <b>Play Loop</b> button to view edit.</li>
+                    </ul>
+                <li> Select new trim from another clip</li>
+                    <ul>
+                    <li> Click with <b>Left Mouse</b> on another clip near the side you wish to trim</li>
+                    </ul>
+                <li> Select other end of same clip to trim</li>
+                    <ul>
+                    <li> Click on empty space on the Timeline</li>
+                    <li> Click with <b>Left Mouse</b> on the original clip near the side you wish to trim</li>
+                    </ul>
+                </ol>
+                
+                <a id="rippletrim"></a>
+                <h3><a name="Trim_Tool_Multi_Track_Ripple_Mode">Trim Tool Multi Track Ripple Mode</a></h3>
+                <p>
+                Make clip longer or shorter from either clip's end or from clip's beginning and move items on other tracks to maintain position sync with trimmed track.
+                </p>
+                <ol>
+                <li> Pick 'Trim' tool</li>
+                    <ul>
+                    <li> Press <b>R</b> key to switch to Multi Track Ripple mode.</li>
+                    </ul>
+                <li> Select trimmed cut and select new in or out frame</li>
+                    <ul>
+                    <li> Press with <b>Left Mouse</b> on a clip near the side you wish to trim</li>
+                    <li> Continue on to <b>Left drag</b> on clip to select new in or out frame</li>
+                    </ul>
+                <li>Items after trim point maintain position sync with trimmed track.</li>
+                <li>Trim range is limited so that no overwrites can happen on other tracks.</li>
+                <li> Press <b>R</b> key to exit to Multi Track Ripple mode.</li>
+                </ol>
+                
+                    
+                <a id="roll"></a>
+                <h3><a name="Roll_Tool">Roll Tool</a></h3>
+                
+                <p>Move edit point between two clips so that their combined length stays the same.</p>
+                
+                <ol>
+                <li> Pick 'Roll' tool</li>
+                    <ul>
+                <li> Use <b>Tool Switcher</b> button drop menu or press <b>4</b> key.</li>
+                    </ul>
+                <li> Select trimmed cut and select new in or out frames</li>
+                    <ul>
+                <li> Press with <b>Left Mouse</b> on a clip near the cut you wish to trim on the side you wish to view while trimming</li>
+                <li> Continue on to <b>Left drag</b> on the two selected clips to select in or out frames for both clips            </li>
+                    </ul>
+                <li> View trimmed cut</li>
+                    <ul>
+                <li> Press <b>Play Loop</b> button to view edit.</li>
+                    </ul>
+                <li> Select new trim from another clip</li>
+                    <ul>
+                <li> Click on empty space on the Timeline</li>
+                <li> Click with <b>Left Mouse</b> near the cut you wish to trim</li>
+                    </ul>
+                </ol>
+                
+                <a id="slip"></a>
+                <h3><a name="Slip_Tool">Slip Tool</a></h3>
+                
+                <p>Change the displayed area of media in a clip while keeping the clip position unchanged on the timeline.</p>
+                
+                <ol>
+                <li>Pick 'Slip' tool</li>
+                    <ul>
+                <li> Use <b>Tool Switcher</b> button drop menu or press <b>5</b> key.</li>
+                    </ul>
+                <li>Select trimmed clip and change displayed media</li>
+                    <ul>
+                <li> Press with <b>Left Mouse</b> on a clip you wish to slip trim</li>
+                <li> Continue on to <b>Left drag</b> from clip area to display different area of media</li>
+                    </ul>
+                <li>Select new trim from another clip</li>
+                    <ul>
+                <li> Click on empty space on the Timeline</li>
+                <li> Click with <b>Left Mouse</b> on the clip you wish to trim</li>
+                    </ul>
+                </ol>
+                
+                <a id="spacer"></a>
+                <h3><a name="Spacer_Tool">Spacer Tool</a></h3>
+                
+                <p>Move all Timeline items after pressed frame on all tracks or on a single track</p>
+                <ol>
+                <li>Pick 'Spacer' tool</li>
+                    <ul>
+                <li> Use <b>Tool Switcher</b> button drop menu or press <b>6</b> key.</li>
+                    </ul>
+                <li>Select a clip on Timeline and move it and all items to the right of it</li>
+                    <ul>
+                <li> Press <b>Left Mouse</b> on a clip.</li>
+                <li>  Continue on to <b>Left drag</b> clip and all clips and compositors to right of it to a new position</li>
+                <li> It is not possible to move items on top of clips. Items can only be moved on top of empty space </li>
+                    </ul>
+                <li>Use <b>Control</b> button to only affect items on a single track</li>
+                    <ul>
+                <li> Press <b>Control</b> and use <b>Left Mouse</b> to move all items on single track to the right of the selected clip</li>
+                    </ul>
+                </ol>
+                
+                <a id="box"></a>
+                <h3><a name="Box_Tool">Box Tool</a></h3>
+                
+                <p>Select and overwrite move all Timeline items contained in a box selection.</p>
+                <ol>
+                <li>Pick 'Box' tool</li>
+                    <ul>
+                <li> Use <b>Tool Switcher</b> button drop menu or press <b>7</b> key.</li>
+                    </ul>
+                <li>Select an area on Timeline by dragging a box selection with <b>Left Mouse</b> around all items you wish to move and release mouse button.</li>
+                
+                <li>Press <b>Left Mouse</b> inside the box selection and drag the box into new position on timeline and release mouse.</li>
+                <li>Box contents are overwritten on new position and Compositors are moved.</li>
+                
+                </ol>
+                    
+                <a id="movetrim"></a>
+                <h3><a name="Move_Tool_clip_end_trim">Move Tool clip end trim</a></h3>
+                
+                <p>
+                When an <b>Insert, Overwrite</b> or <b>Spacer</b> tool is selected the ends of clips can be dragged to lengthen or shorten the clip. 
+                </p>
+                
+                <ol>
+                <li>Pick 'Insert', 'Overwrite' or 'Spacer' tool</li>
+                    <ul>
+                    <li> Use <b>Tool Switcher</b> button drop menu or press <b>1, 2</b> or <b>6</b> key.</li>
+                    </ul>
+                <li>Select clip end to trim</li>
+                    <ul>
+                    <li> Click <b>Control + Right Mouse</b> on a clip.</li>
+                    </ul>
+                    <ul>
+                    <li> The nearer clip end will be selected for edit.</li>
+                    </ul>
+                <li>Drag clip end</li>
+                    <ul>
+                    <li> Added clip length will perform overwrite on blanks and empty space</li>
+                    </ul>
+                    <ul>
+                    <li> Added clip length will perform insert on other clips</li>
+                    </ul>
+                    <ul>
+                    <li> Decreased clip length will perform splice out.</li>
+                    </ul>
+                </ol></div></div>
+
+            <div class="w3-third w3-grey"></div>
+        </div>
+    </div>
+  </body>
+
+</html>

@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <link rel="stylesheet" href="w3style.css">
+    <meta charset="UTF-8" />
+    <title>flowblade-doc</title>
+    
+  </head>
+  <body>
+        <script src='script.js' type='text/javascript'></script>
+        <div class="w3-bar w3-indigo navbar1">
+                <a href="doc.html" class="w3-bar-item w3-button w3-hover-indigo" style="margin: 0px; padding: 0px;">
+                    <img  width="250" height="25" src="graph/navbar.png"></a>
+                <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-text-black w3-hover-indigo">DOWNLOAD</a>
+                <a href="doc.html" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-text-black w3-hover-indigo">DOCS</a>
+                <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-text-black w3-hover-indigo">FEATURES</a>
+                <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-text-black w3-hover-indigo" >ABOUT</a>
+                <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-indigo dropbtn" onclick="myFunction()">&#9776;</a>
+        </div>
+
+        <div id="myDropdown" class="dropdown-content w3-bar-block w3-blue w3-hide w3-hide-large w3-mobile w3-center">
+                <a href="#" class="w3-bar-item w3-button w3-hover-text-black w3-hover-blue" style="border-top-style: none; border-bottom-style: solid; border-right-style: none; border-left-style: none; border-color: black; border-width: 1px;"><b>DOWNLOAD</b></a>
+                <a href="doc.html" class="w3-bar-item w3-button w3-hover-text-black w3-hover-blue" style="border-top-style: none; border-bottom-style: solid; border-right-style: none; border-left-style: none; border-color: black; border-width: 1px;"><b>DOCS</b></a>
+                <a href="#" class="w3-bar-item w3-button w3-hover-text-black w3-hover-blue" style="border-top-style: none; border-bottom-style: solid; border-right-style: none; border-left-style: none; border-color: black; border-width: 1px;"><b>FEATURES</b></a>
+                <a href="#" class="w3-bar-item w3-button w3-hover-text-black w3-hover-blue"><b>ABOUT</b></a>
+        </div>
+        
+        
+       <div class="w3-container w3-card" style=" height:100%; background-color: #dddddd;">
+        
+        <a href="doc.html"><img  src="graph/head.png" style="display: block;
+            margin-left: auto;
+            margin-right: auto; max-width: 930px; max-height: 85px; width: 100%; height: 100%"> </a>
+        
+        
+        
+        <div class=w3-container> 
+          <div class="w3-quarter"  >
+              <p>
+
+              </p>
+          </div>
+
+          <div class="w3-half">
+            
+            
+            
+            <div><h1>CREATING COMPOSITED IMAGES</h1></div>
+            
+            <p>
+            This section describes the minimal workflow for making a movie using only a single track.
+            </p>
+
+            
+            <div class =" w3-card w3-round" id="toc">
+                    <div class="w3-card w3-mobile  w3-center w3-hover-opacity"><div class="w3-container"><a style="text-decoration: none;" href="#1._Advanced_Project_Actions_"><h4 style="display: inline-block"><b>1. Advanced Project Actions</b></h4></a>
+                        <a href="javascript:void(0)" class="w3-bar-item w3-button dropbtn5 w3-hover-black" onclick="myFunction5()">&#9661;</a></div></div>
+                    <div id="myDropdown5" class="dropdown-content5 w3-bar-block w3-hide w3-mobile w3-center" style="background-color: #c9c9c9;">
+                            <div class="w3-card w3-mobile  w3-center w3-hover-opacity"><div class="w3-container"><a style="text-decoration: none;" href="#Combining_Sequences">Combining Sequences</a></div></div>
+                            <div class="w3-card w3-mobile  w3-center w3-hover-opacity"><div class="w3-container"><a style="text-decoration: none;" href="#Importing_Media_from_another_Project">Importing Media from another Project</a></div></div>
+                         </div>
+
+                         <div class="w3-card w3-mobile  w3-center w3-hover-opacity"><div class="w3-container"><a style="text-decoration: none;" href="#2._Compound_Clips_"><h4 style="display: inline-block"><b>2. Compound Clips </b></h4></a>
+                            <a href="javascript:void(0)" class="w3-bar-item w3-button dropbtn4 w3-hover-black" onclick="myFunction4()">&#9661;</a></div></div>
+                            <div id="myDropdown4" class="dropdown-content4 w3-bar-block w3-hide w3-mobile w3-center" style="background-color: #c9c9c9;">
+                           <div class="w3-card w3-mobile  w3-center w3-hover-opacity"><div class="w3-container"><a style="text-decoration: none;" href="#_Creating_Compound_Clip_from_Selection"> Creating Compound Clip from Selection</a></div></div>
+                           <div class="w3-card w3-mobile  w3-center w3-hover-opacity"><div class="w3-container"><a style="text-decoration: none;" href="#_Creating_Compound_Clip_from_Sequence"> Creating Compound Clip from Sequence</a></div></div>
+                           <div class="w3-card w3-mobile  w3-center w3-hover-opacity"><div class="w3-container"><a style="text-decoration: none;" href="#_Creating_audio_synced_Compound_Clip_from_two_Media_Items"> Creating audio synced Compound Clip from two Media Items</a></div></div>
+                           </div>
+
+                           <div class="w3-card w3-mobile  w3-center w3-hover-opacity"><div class="w3-container"><a style="text-decoration: none;" href="#3._Timeline_Audio_Syncing"><h4 style="display: inline-block"><b>3. Timeline Audio Syncing</b></h4></a></div></div>
+                        
+                           <div class="w3-card w3-mobile  w3-center w3-hover-opacity"><div class="w3-container"><a style="text-decoration: none;" href="#4._Slow_/_Fast_Motion_and_Reverse_Clips"><h4 style="display: inline-block"><b>4. Slow / Fast Motion and Reverse Clips</b></h4></a>
+                            <a href="javascript:void(0)" class="w3-bar-item w3-button dropbtn2 w3-hover-black" onclick="myFunction2()">&#9661;</a></div></div>
+                            <div  id="myDropdown2" class="dropdown-content2 w3-bar-block w3-hide w3-mobile w3-center" style="background-color: #c9c9c9;">
+                           <div class="w3-card w3-mobile  w3-center w3-hover-opacity"><div class="w3-container"><a style="text-decoration: none;" href="#_Creating_Motion_Clips_"> Creating Motion Clips </a></div></div>
+                           <div class="w3-card w3-mobile  w3-center w3-hover-opacity"><div class="w3-container"><a style="text-decoration: none;" href="#_Creating_Reverse_Clips_"> Creating Reverse Clips</a></div></div>
+                           </div>
+
+                           <div class="w3-card w3-mobile  w3-center w3-hover-opacity"><div class="w3-container"><a style="text-decoration: none;" href="#5._Clip_Parenting"><h4 style="display: inline-block"><b>5. Clip Parenting</b></h4></a>
+                            <a href="javascript:void(0)" class="w3-bar-item w3-button dropbtn3 w3-hover-black" onclick="myFunction3()">&#9661;</a></div></div>
+                            <div  id="myDropdown3" class="dropdown-content3 w3-bar-block w3-hide w3-mobile w3-center" style="background-color: #c9c9c9;">
+                           <div class="w3-card w3-mobile  w3-center w3-hover-opacity"><div class="w3-container"><a style="text-decoration: none;" href="#Main_points">Main points</a></div></div>
+                           <div class="w3-card w3-mobile  w3-center w3-hover-opacity"><div class="w3-container"><a style="text-decoration: none;" href="#Setting_Sync_Parent">Setting Sync Parent</a></div></div>
+                           <div class="w3-card w3-mobile  w3-center w3-hover-opacity"><div class="w3-container"><a style="text-decoration: none;" href="#Resyncing_Sync_Child_Clips">Resyncing Sync Child Clips</a></div></div>
+                           <div class="w3-card w3-mobile  w3-center w3-hover-opacity"><div class="w3-container"><a style="text-decoration: none;" href="#_Clearing_Sync_Parent_Relations_"> Clearing Sync Parent Relations</a></div></div>
+                           <div class="w3-card w3-mobile  w3-center w3-hover-opacity"><div class="w3-container"><a style="text-decoration: none;" href="#Syncing_Composited_Clips">Syncing Composited Clips</a></div></div>
+                           <div class="w3-card w3-mobile  w3-center w3-hover-opacity"><div class="w3-container"><a style="text-decoration: none;" href="#Audio_Split_Syncing">Audio Split Syncing</a></div></div>
+                            </div>
+               
+            </div>
+
+            <div class="w3-rest"> <p></p></div>
+              
+            <div><h1>Anvanced Editing</h1>
+
+<h2><a name="1._Advanced_Project_Actions_">1. Advanced Project Actions </a></h2>
+
+
+<h3><a name="Combining_Sequences">Combining Sequences</a></h3>
+<p>
+It is possible to import full contents of another Sequence into Sequence currently being edited.
+</p>
+
+<ol>
+<li> Select <b>Project-&gt;Import Another Sequence into this Sequnce..</b></li>
+<li> Select Import action.</li>
+<ul>
+<li> <b>Append Sequence</b> adds imported Sequence at the end of current Sequence</li>
+<li> <b>Insert Sequence at Playhead Position</b> creates a cut at playhead position and inserts imported Sequences at that position</li>
+</ul>
+<li> Select a Sequence to Import</li>
+<ul>
+<li> <b>Note that you obivously need atleast two Sequences to exist to do any import actions.</b></li>
+</ul>
+<li> Press <b>Import</b> button to execute import.</li>
+</ol>
+
+<h3><a name="Importing_Media_from_another_Project">Importing Media from another Project</a></h3>
+
+<p>
+You can import Media Items from another Project.
+</p>
+
+<ol>
+<li> Select <b>Project-&gt;Import Media From Project...</b></li>
+<li> Select a Project file from file system.</li>
+<li> Media items that are not present in current Project will be opened in the current bin. Note that it takes a few seconds to load the project before new Media Items begin to appear.</li>
+</ol>
+
+
+
+<h2><a name="2._Compound_Clips_">2. Compound Clips </a></h2>
+
+<p>
+A <b>Compound Clip</b> is a single clip created by combining multiple clips and compositors in to a single media item.
+</p>
+
+<p>
+In Flowblade Compound Clips are <i>implemented by creating an MLT XML file</i> that is saved in a hidden folder. Note that it is currently not possible to unpack a Compound Clip back to its components.
+</p>
+
+<p>
+Compound Clips are useful when some complex sequence is more conveniently handled as a single unit.
+</p>
+
+<h3><a name="_Creating_Compound_Clip_from_Selection"> Creating Compound Clip from Selection</a></h3>
+
+<ol>
+<li> Select 2 or more adjacent clips from a single track.</li>
+<li> Select <b>Project-&gt;Create Compound Clip-&gt;From Selected Clips</b></li>
+<li> Give a name for the new Media Item in the dialog.</li>
+<li> A new Media Item appears in the current Bin.</li>
+</ol>
+
+<h3><a name="_Creating_Compound_Clip_from_Sequence"> Creating Compound Clip from Sequence</a></h3>
+
+<ol>
+<li> Select <b>Project-&gt;Create Compound Clip-&gt;From Current Sequence</b></li>
+<li> Give a name for the new Media Item in the dialog.</li>
+<li> A new Media Item appears in the current Bin.</li>
+</ol>
+
+<h3><a name="_Creating_audio_synced_Compound_Clip_from_two_Media_Items"> Creating audio synced Compound Clip from two Media Items</a></h3>
+
+<ol>
+<li> Select 2 Media Items in Media panel.</li>
+<ul>
+<li> The expected case is to select <b>1 Video and 1 Audio Clip</b>.</li>
+<li> If you select <b>2 Video Clips</b> then which is used as video depends on selection order.</li>
+<li> Audio from clip treated as video is muted.</li>
+</ul>
+<li> Select <b>Project-&gt;Create Compound Clip-&gt;Audio Sync Merge Clip From 2 Media Items</b></li>
+<li> If audio sync is successful a dialog  appers. Give a name for the new Media Item in the dialog.</li>
+<li> A new Media Item appears in the current Bin.</li>
+</ol>
+
+<div class="note">
+Audio synching looks for best matemathical match between two audio waveforms, so <b>audio syncing non-matching audio will produce random results.</b>
+</div>
+
+
+<h2><a name="3._Timeline_Audio_Syncing">3. Timeline Audio Syncing</a></h2>
+
+<p>
+You can make a clip to move to a position in timeline in which its audio is in sync with audio of another clip on timeline.
+</p>
+
+<p>
+This enables you to do simplified version of multicam editing on the timeline.
+</p>
+
+<ol>
+<li> Open context menu with <b>Right Mouse</b> on Clip you wish to sync with some other clip.</li>
+<li> Select menu item <b>Select Clip to Audio Sync With...</b>. The cursor changes to a targeting cross.</li>
+<li> Click on Clip you wish to audio sync with.</li>
+<li> A dialog opens giving info on the sync action that is to be done to sync clips.</li>
+<li> Press <b>Do Audio Sync Move Edit</b> button to do the syncing edit.</li>
+<li> It is usually a good idea to mute one of the synched clips</li>
+</ol>
+
+<div class="note">
+Audio synching looks for best matemathical match between two audio waveforms, so <b>audio syncing non-matching audio will produce random results.</b>
+</div>
+
+<h2><a name="4._Slow_/_Fast_Motion_and_Reverse_Clips">4. Slow / Fast Motion and Reverse Clips</a></h2>
+
+<p>
+In Flowblade motion effects are achived by <b>rendering slow / fast motion  or reverse versions of video clips</b> and placing those on the timeline.
+</p>
+<h3><a name="_Creating_Motion_Clips_"> Creating Motion Clips </a></h3>
+<ol>
+<li> Right click on a Media File and select <b>Render Slow / Fast Motion File</b> from menu</li>
+<li>Edit parameters for the new motion Clip
+<ul>
+<li> Set speed</li>
+<li> Give name and location for motion Clip </li>
+<li> Select rendering parameters for motion Clip. It is probably a good idea to use a <b>lossless format</b> here to avoid any generational quality losses.</li>
+<li> Select render range, either:</li>
+<ul>
+<li> Full Source Clip</li>
+<li> From Source Clip Mark In to Mark Out</li>
+</ul>
+</ul>
+</li><li> Click <b>Render</b> button to create a new motion Clip</li>
+</ol>
+
+<h3><a name="_Creating_Reverse_Clips_"> Creating Reverse Clips </a></h3>
+<ol>
+<li> Right click on a Media File and select <b>Render Reverse Motion File</b> from menu</li>
+<li>Edit parameters for the new motion Clip
+<ul>
+<li> Set speed</li>
+<li> Give name and location for reverse Clip </li>
+<li> Select rendering parameters for reverse Clip. It is probably a good idea to use a <b>lossless format</b> here to avoid any generational quality losses.</li>
+<li> Select render range, either:</li>
+<ul>
+<li> Full Source Clip</li>
+<li> From Source Clip Mark In to Mark Out</li>
+</ul>
+</ul>
+</li><li> Click <b>Render</b> button to create a new reverse Clip</li>
+</ol>
+
+<h2><a name="5._Clip_Parenting">5. Clip Parenting</a></h2>
+
+<p>
+In Flowblade Movie Editor you can <b>set a clip's positions to follow another clip's positions</b> on request.
+</p>
+
+<h3><a name="Main_points">Main points</a></h3>
+<ul>
+<li>Sync relations are set up by selecting a <b>Sync Parent Clip</b> for a <b>Sync Child Clip</b>.</li>
+<li><b>Only clips on track V1 can be Sync Parent Clips</b>. This is done to encourage edit style in which the main body of the Sequence is on track V1 and composites and audio split edits are done relative to the clip sequence on track V1.</li>
+<li><b>Sync feature helps preserve earlier work</b> an multitrack composites and audio split edits when clips are no longer in correct positions relative to each other, because of edits elsewhere on the Sequence.</li>
+<li><b>Resyncs are only done on request</b> to avoid jumping of clips on the timeline while editing. Explicit resyncs are also better from the point of view of avoiding side effects when doing edits.
+</li>
+</ul>
+<h3><a name="Setting_Sync_Parent">Setting Sync Parent</a></h3>
+<ol>
+<li> Click <b>Right Mouse</b> on clip and select Select Sync Parent Clip... on any clip NOT on track V1.</li>
+<li> Cursor turns into a Target Cross. Click on clip on track V1 to select it as Sync Parent Clip.</li>
+<li> Sync Relation is established between the two clips. Cursor turns back into a default pointer.</li>
+<li> Sync State Stripe appers on the Sync Child Clip. Sync State Indicator Stripes on Clips:</li>
+<ul>
+<li> Green means that clip is in sync with parent.</li>
+<li> Red means that clip is NOT in sync with parent.</li>
+<li> Gray means that Sync Parent Clip is no longer on track V1.</li>
+</ul>
+</ol>
+
+<h3><a name="Resyncing_Sync_Child_Clips">Resyncing Sync Child Clips</a></h3>
+<ul>
+<li> Select <b>Edit -&gt; Resync All to resync</b> from application menu all Sync Child Clips.</li>
+<li> Select <b>Edit - &gt;Resync Selected to resync</b> from application menu selected Sync Child Clips.</li>
+<li> Click <b>Right Mouse</b> on Sync Child Clip and select <b>Resync</b> from popoup menu to resync single clip.</li>
+<li> Press <b>Resync Selected</b> Bbtton to resync selected Sync Child Clips.</li>
+</ul>
+
+<h3><a name="_Clearing_Sync_Parent_Relations_"> Clearing Sync Parent Relations </a></h3>
+<ul>
+<li> Click <b>Right Mouse</b> on Sync Child Clip and select Clear Sync Relation.</li>
+</ul>
+
+<h3><a name="Syncing_Composited_Clips">Syncing Composited Clips</a></h3>
+<ul>
+<li> If appropriate set all clips that are part of a multitrack composite synched to the same clip.</li>
+</ul>
+
+<h3><a name="Audio_Split_Syncing">Audio Split Syncing</a></h3>
+<ul>
+<li> Click <b>Right Mouse</b> on clip in track V1 and select Split Audio Synched.</li>
+<li> Edit audio split using Two Roll Trim mode to maintain sync with parent clip.</li>
+<li> Resync Audio as needed.</li>
+</ul>
+
+	
+</div>
+</div>
+                            
+                        
+
+            <div class="w3-third w3-grey"></div>
+        </div>
+    </div>
+  </body>
+
+</html>
