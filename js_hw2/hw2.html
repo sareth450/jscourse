@@ -1,9 +1,7 @@
 <!DOCTYPE html>
 <html lang="pl">
   <head>
-    <script src=https://cdnjs.cloudflare.com/ajax/libs/mathjs/3.3.0/math.min.js type="text/javascript"></script>
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-     <meta charset="UTF-8" />
+    <meta charset="UTF-8" />
     <title>ex2</title>
   </head>
   <body>
@@ -19,8 +17,7 @@
                     <input type="text" name="pole_tekstowe"/>
                     <input type="button" onclick="add();" value="dodaj ocene osobie" />
             </form>
-            <br>Oceny wprowadzane są w formacie "osoba przedmiot ocena". Oceny z poza skali 2-5 nie będą zapisywane.</br>
-            <br></br>
+
             <button type="button" onclick="wp();">write people</button><br><br>
             <button type="button" onclick="wr();">write marks</button><br><br>
 
@@ -28,18 +25,6 @@
                 <input type="text" name="pole_tekstowe"/>
                 <input type="button" onclick="avg(frm3.elements.pole_tekstowe.value);" value="policz srednia" />
             </form>
-            <br>Wprowadź osobę, dla której chcesz psoliczyć średnią (wynik console.log)</br>
-            <br></br>
-            <form name="f4">
-                <input type="text" name="pole_tekstowe"/>
-                <input type="button" onclick="med(frm4.elements.pole_tekstowe.value);" value="policz medianę" />
-            </form>
-            <br>Wprowadź osobę, dla której chcesz policzyć medianę (wynik console.log)</br>
-            <br></br>
-            <button type="button" onclick="stDev();">write standard devination</button><br><br>
-            <button type="button" onclick="drawChart();">draw averages chart</button><br><br>
-
-            <canvas id="can" width="1100" height="400"/>
 
         </main>
         <div id="mocha">
