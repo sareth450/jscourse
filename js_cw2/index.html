@@ -21,8 +21,8 @@
             </form>
             <br>Oceny wprowadzane są w formacie "osoba przedmiot ocena". Oceny z poza skali 2-5 nie będą zapisywane.</br>
             <br></br>
-            <button type="button" onclick="wp();">write people</button><br><br>
-            <button type="button" onclick="wr();">write marks</button><br><br>
+            <button type="button" onclick="wp();">wypisz uczniów</button><br><br>
+            <button type="button" onclick="wr();">wypisz oceny wszystkich uczniów</button><br><br>
 
             <form name="f3">
                 <input type="text" name="pole_tekstowe"/>
@@ -36,9 +36,14 @@
             </form>
             <br>Wprowadź osobę, dla której chcesz policzyć medianę (wynik console.log)</br>
             <br></br>
-            <button type="button" onclick="stDev();">write standard devination</button><br><br>
-            <button type="button" onclick="drawChart();">draw averages chart</button><br><br>
-
+            <button type="button" onclick="stDev();">Wypisz odchylenie standardowe</button><br><br>
+            <form name="f5">
+                <input type="text" name="pole_tekstowe"/>
+                <input type="button" onclick="drawChart(frm5.elements.pole_tekstowe.value);" value="Narysuj wykres" />
+            </form>
+            <br>Wprowadź osobę, dla której chcesz narysować wykres</br>
+            <!--<button type="button" onclick="drawChart();">draw averages chart</button><br><br>
+            -->
             <canvas id="can" width="1100" height="400"/>
 
         </main>

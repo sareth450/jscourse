@@ -10,13 +10,14 @@ var expect = chai.expect;
     var window = document.getElementById('wykres');
     var avgs = [];
 
+    var frm5 = document.forms.f5;
     var frm4 = document.forms.f4;
     var frm3 = document.forms.f3;
     var frm2 = document.forms.f2;
     function add()
     {
         var res = frm2.elements.pole_tekstowe.value.split(" ");
-        if (parseFloat(res[2]) > 5.0 || paresFloat(res[2]) < 2.0)
+        if (parseFloat(res[2]) > 5.0 || parseFloat(res[2]) < 2.0)
             {
                 console.log("zła ocena!");
 
@@ -195,46 +196,56 @@ var expect = chai.expect;
 // wykres kołowy średnuich wszystkich uczniów
 
 
-function drawChart(){
+function drawChart(pupil){
 
     var canvas = document.getElementById("can");
     var ctx = canvas.getContext("2d");
     var lastend = 0;
     var myTotal = 0; 
     ctx.clearRect(0, 0, canvas.width, canvas.height);
+    console.log(pupil.toString())
+   var marks=[];
+   var ml=0;
+   var idx = persons.get(pupil);
 
-    createAvgs(); //aktualizuj srednie
-var avgsCount = [];
-var avgsLabels = [];
-for(var j=0; j<avgs.length; j++)
+
+   for (var [key, value] of rates[idx]) {
+       marks.push(value);
+        ml+=1;
+   }
+
+
+var marksCount = [];
+var marksLabels = [];
+for(var j=0; j<ml; j++)
   {
-    avgsCount.push(-1);
-    avgsLabels.push(-1);
+    marksCount.push(-1);
+    marksLabels.push(-1);
   }
   //zliczam ilość wystapień srednich przypisujeim etykiete w osobnej tablicy
 
-    for(var i=0; i<avgs.length; i++)
+    for(var i=0; i<ml; i++)
     {     
-        for(var j=0; j<avgsLabels.length; j++){
-          if(avgsLabels[j] == -1)
+        for(var j=0; j<marksLabels.length; j++){
+          if(marksLabels[j] == -1)
           {
-              avgsLabels[j] = avgs[i].toString();
-              avgsCount[j] = 1;
+              marksLabels[j] = marks[i].toString();
+              marksCount[j] = 1;
               break;
           }
-          else if(avgsLabels[j].toString() == avgs[i].toString())
+          else if(marksLabels[j].toString() == marks[i].toString())
           {
-            avgsCount[j]++;
+            marksCount[j]++;
               break;
           }
     }
     } 
     //usuwam niepotrzebne rekordy
-for(var k=avgs.length-1; k>=0; k--)
+for(var k=ml-1; k>=0; k--)
 {
-     if(avgsLabels[k]==-1){
-        avgsLabels.pop();
-        avgsCount.pop();
+     if(marksLabels[k]==-1){
+        marksLabels.pop();
+        marksCount.pop();
      }    
      else {
          break;
@@ -250,25 +261,25 @@ for(var k=avgs.length-1; k>=0; k--)
         return color;
       }
 
-   for (var e = 0; e < avgsCount.length; e++) {
-     myTotal += avgsCount[e];
+   for (var e = 0; e < marksCount.length; e++) {
+     myTotal += marksCount[e];
    }
    
-   for (var i = 0; i < avgsCount.length; i++) {
+   for (var i = 0; i < marksCount.length; i++) {
      ctx.fillStyle = getRandomColor();
      //wypisanie wartości procentowej aktualnej sredniej
-     var percentage = parseFloat(parseFloat(100)*(parseFloat(avgsCount[i]) / parseFloat(myTotal)));
-     var label = (avgsLabels[i].toString() + " -- " + percentage.toString() + "%");
+     var percentage = parseFloat(parseFloat(100)*(parseFloat(marksCount[i]) / parseFloat(myTotal)));
+     var label = (marksLabels[i].toString() + " -- " + percentage.toString() + "%");
      var ctx = canvas.getContext("2d");
      ctx.font = "15px Arial";
      ctx.fillText(label,10,18*(i+1));
      ctx.beginPath();
      ctx.moveTo(canvas.width / 2 + 100, canvas.height / 2);
      // Arc Parameters: x, y, radius, startingAngle (radians), endingAngle (radians), antiClockwise (boolean)
-     ctx.arc(canvas.width / 2 + 100, canvas.height / 2, canvas.height / 2, lastend, lastend + (Math.PI * 2 * (avgsCount[i]  / myTotal)), false);
+     ctx.arc(canvas.width / 2 + 100, canvas.height / 2, canvas.height / 2, lastend, lastend + (Math.PI * 2 * (marksCount[i]  / myTotal)), false);
      ctx.lineTo(canvas.width / 2 + 100, canvas.height / 2);
      ctx.fill();
-     lastend += Math.PI * 2 * (avgsCount[i] / myTotal);
+     lastend += Math.PI * 2 * (marksCount[i] / myTotal);
    }
 
 }
